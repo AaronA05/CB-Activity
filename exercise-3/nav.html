@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Call Box Navigation</title>
+
+    <link rel="stylesheet" href="nav.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Coda|Roboto:700" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#home">Home</a>
+    <a href="#inventory" class="dropdown" onclick="showDrop()">Inventory</a>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#inv-new">New</a>
+            <a href="#inv-used">Used</a>
+            <a href="#inv-trucks">Trucks</a>
+            <a href="#inv-suv">SUV's</a>
+        </div>
+    <a href="#about-us">About Us</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<button onclick="openNav()" class="nav-button"><i class="fas fa-bars"></i></button>
+
+<div id="main">
+    <div id="home" class="section">
+        <h1>Home</h1>
+    </div>
+    <div id="inventory" class="section">
+        <h1>Inventory</h1>
+        <div id="inv-new" class="inv">
+            <h2>New Cars</h2>
+        </div>
+        <div id="inv-used" class="inv">
+            <h2>Used Cars</h2>
+        </div>
+        <div id="inv-trucks" class="inv">
+            <h2>Trucks</h2>
+        </div>
+        <div id="inv-suv" class="inv">
+            <h2>SUV's</h2>
+        </div>
+    </div>
+    <div id="about-us" class="section">
+        <h1>About Us</h1>
+    </div>
+    <div id="contact" class="section">
+        <h1>Contact</h1>
+    </div>
+</div>
+
+</body>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</html>
